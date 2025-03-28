@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 int main (){
 
     char estado [20] ;
@@ -9,14 +8,6 @@ int main (){
     float pib1;
     int ponto_turistico[20];
     float area1;
-    int atributo1, atributo2;
-    int cadastrar;
-    int resultado1, resultado2;
-
-
-
-
-
     printf("digite seu estado:");
     scanf("%s", estado);
     
@@ -83,42 +74,42 @@ printf(" o pib percapita é: %f\n", pib_percapita);
   printf ("a densidade é: %f\n", densidade2);
 printf(" o pib percapita é: %f\n", pib_percapita2);
 
-//*****************MENU*************************
-atributo1 = 0;
-atributo2 = 0;
 
-printf ("Escolha um dos atributos a ser comparado:\n");
-printf ("1. população;\n");
-printf ("2. area;\n");
-printf ("3. PIB;\n");
-printf ("4. Numero de pontos turisticos;\n");
-printf ("5. Densidade demografica;\n");
-scanf ("%d", &atributo1);
+if (area1 > area2){
+     printf("Area da carta 1 é maior que da carta 2\n");
+}else{
+  printf ("area da carta 1 é menor que a da carta 2");
+}
 
-//escolha do segunod atributo:
-printf ("escolha o segundo atributo a ser comparado");
-//Logica para o usuario não escolher o memso atributo:
-printf(atributo1 == 1 ?"\n : ", 1.populacao;\n );
-printf("atributo1");
-printf("atributo1");
-printf("atributo1");
-printf("atributo1");
+if (populacao1 > populacao2){
+    printf ("população da carta 1 é maior que da carta 2\n");
+} else {
+printf("a população da carta 1 é menor que a da carta 2.\n");
+}
 
+if (pib1 > pib2){
+     printf("o pib da carta 1 é maior que da carta 2\n");       
+} else {
+      printf("o pib da carta 1 é menor que a da carta2\n ");
+}
 
-
-
-
-
-
-
-
-
-
+if (ponto_turistico > ponto_turistico2){
+     printf ("o  numero ponto turistico da carta 1 é maior que o da carta 2\n");
+}else{
+  ("o numero de pontos turisticos da carta 1 é menor que da carta 2\n");
+}
+if (pib_percapita > pib_percapita2){
+    printf ("o pib percapita da carta 1 é maior que o da carta 2\n");
+}else{
+  printf ("o pib percapita da carta 1 é maior que o da carta 2\n");
+}
 
 
-
-
-
+if (densidade1 > densidade2){
+    printf ("A densidade populaçional da carta 1 é maior que a da carta 2\n");
+}else{
+  printf("A densidade populaçional da carta 1 é menor que a da carta 2\n");
+}
 
 
 
